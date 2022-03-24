@@ -88,6 +88,10 @@
                         <ff-text-input :password="true" placeholder="Password goes here..."/>
                         <code>{{ groups[1].components[0].examples[1].code }}</code>
                     </div>
+                    <div class="example">
+                        <ff-text-input v-model="myVar" disabled="true" placeholder="You shall not enter" />
+                        <code>{{ groups[1].components[0].examples[2].code }}</code>
+                    </div>
                 </div>
             </div>
         </div>
@@ -178,6 +182,8 @@ export default {
                         code: '<ff-text-input v-model="myVar" placeholder="Insert something here..." />'
                     }, {
                         code: '<ff-text-input :password"true" v-model="myPassword" placeholder="Password goes here..." />'
+                    }, {
+                        code: '<ff-text-input v-model="myVar" disabled="true" placeholder="You shall not enter" />'
                     }],
                     props: [{
                         key: 'disabled',
