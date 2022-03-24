@@ -3,6 +3,10 @@ import { openBlock, createElementBlock, normalizeClass, renderSlot, createCommen
 var script$1 = {
     name: 'ff-button',
     props: {
+        type: {
+            default: 'button', // "button" or "submit"
+            type: String
+        },
         kind: {
             default: 'primary',
             type: String // "primary", "secondary", "tertiary"
@@ -54,6 +58,7 @@ const _hoisted_3 = {
 function render$1(_ctx, _cache, $props, $setup, $data, $options) {
   return (openBlock(), createElementBlock("button", {
     class: normalizeClass(["ff-btn", 'ff-btn--' + $props.kind + ($options.hasIcon ? ' ff-btn-icon' : '') + ($props.size === 'small' ? ' ff-btn-small' : '') + ($props.size === 'full-width' ? ' ff-btn-fwidth' : '')]),
+    type: "button",
     onClick: _cache[0] || (_cache[0] = $event => ($options.go()))
   }, [
     ($options.hasIconLeft)

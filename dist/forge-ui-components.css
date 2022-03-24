@@ -39,7 +39,7 @@ code {
 .ff-btn {
   padding: 6px 18px;
   border-radius: 6px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-size: 0.85rem;
   line-height: 20px;
