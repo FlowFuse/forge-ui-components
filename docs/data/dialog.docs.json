@@ -27,6 +27,10 @@
             "key": "disable-primary",
             "default": "false",
             "description": "Boolean to control the disabled state of the primary confirm button."
+        }, {
+            "key": "close-on-confirm",
+            "default": "true",
+            "description": "Boolean to control if the dialog should be closed automatically when the primary action button is selected."
         }],
         "slots": [{
             "name": "default",
