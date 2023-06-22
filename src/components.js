@@ -14,6 +14,7 @@ import FFHelpTooltip from './components/Help.vue'
 import FFTextInput from './components/form/TextInput.vue'
 import FFDropdown from './components/form/Dropdown.vue'
 import FFDropdownOption from './components/form/DropdownOption.vue'
+import FFDropdownGroup from './components/form/DropdownGroup.vue'
 import FFCheckbox from './components/form/Checkbox.vue'
 import FFRadioGroup from './components/form/RadioGroup.vue'
 import FFRadioButton from './components/form/RadioButton.vue'
@@ -49,6 +50,7 @@ export default {
     FFTextInput,
     FFDropdown,
     FFDropdownOption,
+    FFDropdownGroup,
     FFCheckbox,
     FFRadioGroup,
     FFRadioButton,

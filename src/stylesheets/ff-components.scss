@@ -306,6 +306,12 @@ li.ff-list-item {
         background-color: $ff-grey-200;
       }
     }
+    .ff-dropdown-group {
+      font-weight: bold;
+      padding: $ff-unit-sm $ff-unit-md;
+      background-color: $ff-grey-50;
+      border-bottom: 1px solid $ff-grey-200;
+    }
     &.ff-dropdown-options--full-width {
       width: 100%;
       border-width: 0 1px 1px 1px;
