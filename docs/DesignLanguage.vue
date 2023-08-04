@@ -675,21 +675,18 @@
                 <div class="examples">
                     <div class="example">
                         <h5>Example 1: Horizontal Tabs</h5>
-                        <ff-tabs orientation="horizontal">
-                            <ff-tab label="Option 1" to="" />
-                            <ff-tab label="Option 2" to="" />
-                            <ff-tab label="Option 3" to="" />
-                        </ff-tabs>
+                        <ff-tabs orientation="horizontal" :tabs="[{ label: 'Option 1' }, { label: 'Option 2' }, { label: 'Option 3' }]"></ff-tabs>
                         <code>{{ cGroups['tabs'].components[0].examples[0].code }}</code>
                     </div>
                     <div class="example">
                         <h5>Example 2: Vertical Tabs</h5>
-                        <ff-tabs orientation="vertical">
-                            <ff-tab label="Option 1" to="" />
-                            <ff-tab label="Option 2" to="" />
-                            <ff-tab label="Option 3" to="" />
-                        </ff-tabs>
+                        <ff-tabs orientation="vertical" :tabs="[{ label: 'Option 1' }, { label: 'Option 2' }, { label: 'Option 3' }]"></ff-tabs>
                         <code>{{ cGroups['tabs'].components[0].examples[1].code }}</code>
+                    </div>
+                    <div class="example">
+                        <h5>Example 3: Async</h5>
+                        <ff-tabs ref="asyncTabs" orientation="vertical" :tabs="tabs" />
+                        <code>{{ cGroups['tabs'].components[0].examples[2].code }}</code>
                     </div>
                 </div>
             </div>
@@ -810,6 +807,7 @@ export default {
                 tiles1: null,
                 tiles3: 3
             },
+            tabs: null,
             loading: {
                 switch3: false
             },
@@ -1015,6 +1013,7 @@ export default {
     async mounted () {
         await this.$nextTick()
         this.toSection(window.location.hash.replace('#', ''))
+        this.addAsyncTabs()
     },
     methods: {
         toSection (ref) {
@@ -1052,6 +1051,12 @@ export default {
                 this.models.switch3 = !this.models.switch3
                 this.loading.switch3 = false
             }, 2000)
+        },
+        addAsyncTabs () {
+            this.tabs = [
+                { label: 'My Label' },
+                { label: 'My Label 2' }
+            ]
         }
     }
 }

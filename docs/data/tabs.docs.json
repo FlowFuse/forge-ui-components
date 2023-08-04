@@ -5,9 +5,11 @@
     "components": [{
         "name": "ff-tabs",
         "examples": [{
-            "code": "<ff-tabs orientation=\"horizontal\">\n\t<ff-tab label=\"Option 1\" to=\"\" />\n\t<ff-tab label=\"Option 2\" to=\"\" />\n\t<ff-tab label=\"Option 3\" to=\"\" />\n</ff-tabs>"
+            "code": "<ff-tabs :tabs=\"[{ label: 'Option 1' }, { label: 'Option 2' }, { label: 'Option 3' }]\"></ff-tabs>"
         }, {
-            "code": "<ff-tabs orientation=\"vertical\">\n\t<ff-tab label=\"Option 1\" to=\"\" />\n\t<ff-tab label=\"Option 2\" to=\"\" />\n\t<ff-tab label=\"Option 3\" to=\"\" />\n</ff-tabs>"
+            "code": "<ff-tabs orientation=\"vertical\" :tabs=\"[{ label: 'Option 1' }, { label: 'Option 2' }, { label: 'Option 3' }]\"></ff-tabs>"
+        }, {
+            "code": "<ff-tabs orientation=\"vertical\" :tabs=\"tabs\"></ff-tabs>"
         }],
         "props": [{
             "key": "orientation",
