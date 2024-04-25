@@ -1,6 +1,6 @@
 # FlowForge UI Components
 
-Detailed documentation on each of the available components (including examples) can be found here: https://flowforge.github.io/forge-ui-components/
+Detailed documentation on each of the available components (including examples) can be found here: https://flowfuse.github.io/forge-ui-components/
 
 ## How to use
 
